@@ -21,6 +21,25 @@ public class PalindromeNumber {
             flag = true;
         }
         System.out.println(flag);
+
+        //3
+        boolean resaut = false;
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            resaut = true;
+        }
+
+        int revertedNumber = 0;
+        while (x > revertedNumber) {
+            revertedNumber = revertedNumber * 10 + x % 10;
+            x /= 10;
+        }
+
+        resaut = x == revertedNumber || x == revertedNumber / 10;
+        System.out.println(resaut);
     }
 }
+
+
+
+
 
