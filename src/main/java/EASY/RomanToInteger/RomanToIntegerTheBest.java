@@ -1,4 +1,4 @@
-package RomanToInteger;
+package EASY.RomanToInteger;
 
 public class RomanToIntegerTheBest {
     public static void main(String[] args) {
